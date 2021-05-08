@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Sign up form Validation</title>
+</head>
+
+<body>
+    <div class="formblack">
+    <h1> Sign up</h1>
+    <hr>
+    <div>
+        <form id="myForm">
+            <label for="first">FirstName: </label>
+            <input type="text" name="first">
+            <br>
+            <label for="last">LastName: </label>
+            <input type="text" name="last">
+            <br>
+            <label for="email">Email: </label>
+            <input type="text" name="email">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" name="password">
+            <br>
+            <button type="button" style="font-size: 20px;font-weight: 600;margin-top: 20px; width: 100px;background-color: blueviolet;color: wheat; border-radius: 5px;   height: 30px;">Submit</button>
+        </form>
+    </div>
+</div>
+    <style>
+            .formblack{
+                border: 1px solid black; border-radius: 25px;
+                background-image: azure
+                width: 40%;
+                height: fit-content;
+                margin: 250px;
+                padding: 40px;
+            }
+             input{
+                width: 80%; height: 30px;
+                margin-left: 100px;
+            }
+            label{
+                font-size: 25px; font-weight: 400;
+               
+            }
+            
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                validateMe();
+            })
+
+            function validateMe() {
+                $('label').css('color','black');
+                var error = [];
+                var emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                $('#myForm input').each(function () {
+                    var inputName = $(this).attr('name');
+                    if ($(this).val().length > 4) {
+                        if(inputName=='email' && !emailReg.test($(this).val())) {
+                            error.push($(this).attr('name'));
+                        }
+                    }
+                    else {
+                        error.push($(this).attr('name'));
+                    }
+                })
+                if (error.length == 0) {
+                    $('#myForm').submit();
+                }else{
+                    for(x=0;x<error.length;x++){
+                    $('label[for="'+error[x]+'"]').css('color','red');
+                    //$('input[name="'+error[x]+'"]').after('<span>Error</span>')
+                     console.log(error[x])
+                    }
+                    
+                }
+            }
+        })
+        //https://regexr.com/
+    </script>
+</body>
+
+</html>

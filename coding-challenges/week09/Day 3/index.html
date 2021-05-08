@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> IRONMAN SITRAORNKMAN COLA </title>
+</head>
+<body>
+<script>
+function Cola(obj){
+this.addcola = obj;}
+Cola.prototype.adding =function(){
+for(prop in this.addcola){
+this.addcola[prop]= this.addcola[prop]+'cola'}
+console.log(this.addcola) }
+var p = new Cola({a:1,b:2,c:3})
+p.adding()
+</script>
+</body>
+</html>

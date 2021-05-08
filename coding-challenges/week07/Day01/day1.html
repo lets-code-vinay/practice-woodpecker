@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Day 1 CC</title>
+    <!--Programmed By : Vinay maurya: AttainU : -->
+</head>
+<body>
+    <div>
+        <ul>
+            <span>
+                <p>Hola amigos</p>
+                <p>Como E’stas</p>
+                <p>Namaste</p>
+            </span>
+            <span class='firstSpan'>
+                <p>Hi there</p>
+                <p>Hello world</p>
+                <p>Good morning</p>
+            </span>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    var firstChild = document.querySelector('.firstSpan').firstElementChild;
+    var lastChild =  document.querySelector('.firstSpan').lastElementChild;
+    var prevElemSecondChild = document.querySelector('.firstSpan').previousElementSibling.children[1];
+    console.log(firstChild,lastChild,prevElemSecondChild);
+</script>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "learningnodejs",
+  "version": "1.0.1",
+  "description": "Learning Node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "vinay"
+  ],
+  "author": "Vinay Maurya",
+  "license": "MIT"
+}

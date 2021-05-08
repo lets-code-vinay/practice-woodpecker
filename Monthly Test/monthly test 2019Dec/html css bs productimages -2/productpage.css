@@ -1,0 +1,16 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 75%;
+    margin-top: 50px auto;
+    display: grid;
+    color: white;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 30px 200px auto 100px;
+
+    grid-gap: 20px;
+
+}
+.mobile, .watch, .mensgrooming, .girlstop, .powerbank, .maggie, 

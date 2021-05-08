@@ -1,0 +1,21 @@
+*{
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+}
+#accmore{
+    padding: auto;
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+}
+b{
+    color: black;
+}
+
+#searchicon{
+        position: absolute;
+        display: inline-block;
+}
+body{
+    background-color: white;
+}

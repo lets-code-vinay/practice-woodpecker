@@ -1,0 +1,25 @@
+[
+  {
+    "id": "82e2469f-064c-4f9a-8705-100eefb780a1",
+    "name": "vinay maurya",
+    "email": "vinay.maurya@gmail.com",
+    "password": "12345",
+    "blogs": [
+      {
+        "id": "1",
+        "title": "string",
+        "content": "string"
+      },
+      {
+        "id": "2",
+        "title": "string2",
+        "content": "string"
+      },
+      {
+        "id": "3",
+        "title": "string3",
+        "content": "string"
+      }
+    ]
+  }
+]

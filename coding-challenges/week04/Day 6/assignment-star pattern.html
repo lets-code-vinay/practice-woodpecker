@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+
+        <title> Javascript Star pattern</title>
+    <!--Programmed by : Vinay Mauyra: AttainU: VST1: Woodpecker: Ludhiana-->
+    
+    </head>
+    <body>
+        <script>
+        
+        //Assignment- Coding Challenge-2 
+//Program to print star pattern
+            var rows = prompt("Enter the number of rows you want to enter");
+            var col = prompt("Enter the numbers of columns you want to enter");
+			var k = 0
+			for( i = 0; i <= rows; i++){
+					i <= col - 1 ? k++ : k--; 
+				for(j = 1; j <= col; j++){
+					if(j <= k)
+						document.write("*");
+					else
+						document.write(" ");
+				}
+			document.write("<br/>")
+			}
+
+        </script>
+    </body>
+</html>

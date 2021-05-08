@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Phone number problem</title>
+        <!--Atteempted By: vinay Maurya: AttainU: VST-1: -->
+    </head>
+    <body>
+        <script>
+/*
+rite a javascript function to check whether the given input is a valid phone number. It should check the following conditions
+
+1.	Every digit should contain 10 characters. Look onto the internet for string conversion.
+2.	The first number should start from 9 or 8 or 7.
+3.	The sum of 5, 6, 7 digits should not be greater than 25.
+*/
+            var number = prompt("Enter a phone number");
+            var phoneNumber = number.toString();
+            if(phoneNumber.length == 10){
+                    phoneNumber = number.split('');
+                if(parseInt(phoneNumber[0]) == 9 || parseInt(phoneNumber[0]) == 8 || parseInt(phoneNumber[0]) == 7){
+                    if(parseInt(phoneNumber[4]) + parseInt(phoneNumber[5])+ parseInt(phoneNumber[6]) <= 25){      
+                }
+            }
+                document.write("The phoneNumber is -",phoneNumber);
+            }
+            else
+            {
+                alert("Enter only 10 digits")
+            }
+
+           </script>
+
+    </body>
+</html>

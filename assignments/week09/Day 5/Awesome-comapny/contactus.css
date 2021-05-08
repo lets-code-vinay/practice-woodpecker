@@ -1,0 +1,255 @@
+*{
+	margin:0;
+	padding:0;
+}
+#root{
+	position: fixed;
+	height: 1000px;
+	width: 1000x;
+}
+#parent{
+	position: fixed;
+	height: 600px;
+	width: 1550px;
+	left: 100px;
+	top: 200px;
+}
+#root{
+	position: fixed;
+	height: 600px;
+	width: 600px;
+}
+
+body{
+	position: fixed;
+	height: 1080px;
+	width: 1920px;
+	border:2px style grey;
+	background-color: #b222;
+}
+
+#headbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 1920px;
+	background-image: linear-gradient(#8E0E00, #1f1c18);
+	border:1px;
+	border-radius: 2px;
+	border-color: white;
+}
+#penfool{
+	position: fixed;
+	top: 5px;
+	left: 50px;
+	height: 45px;
+	width: 1920px;
+	color: #D35400;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: serif;
+	text-align: left;
+
+}
+#minimize{
+	position: fixed;
+	top: 12px;
+	left: 1845px;
+}
+#maximize{
+	position: fixed;
+	top: 12px;
+	left: 1870px
+}
+#cut{
+	position: fixed;
+	top: 12px;
+	left:  1895px;
+}
+#navigationbar{
+	position: fixed;
+	top: 60px;
+	left: 0px;
+	height: 50px;
+	width: 1920px;
+	text-decoration: none;
+	background-color: grey;
+	border-radius: 2px;
+	border:1px;
+	border-color: blue;
+}
+a{
+	text-decoration: none;
+	color : white;
+}
+a:hover{
+	background-color: #810f02;
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px white;
+	font-size: 36px;
+
+}
+img:hover{
+	background-color: #5e130a;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px white;
+}
+#feature1:hover{
+	background-color: #5e130a;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px grey;	
+	font-size: 20px;
+}
+#home{
+	position: fixed;
+	top: 40px;
+	left: 5px;
+	width: 200px;
+	font-style: bold;
+	font-family: serif;
+	font-size: 35px;
+	text-decoration: none;
+	color: white;
+}
+#aboutus{
+	position: fixed;
+	left: 210px;
+	top: 40px;
+	width: 200px;
+	font-style: bold;
+	font-family: serif;
+	font-size: 35px;
+	text-decoration: none;
+	color: white;
+}
+#contactus{
+	position: fixed;
+	left: 410px;
+	top: 40px;
+	width: 200px;
+	font-style: bold;
+	font-family: serif;
+	font-size: 35px;
+	text-decoration: none;
+	color: white;
+}
+#mainbody{
+	position: fixed;
+	left: 220px;
+	top: 200px;
+	width: 1550px;
+	height: 650px;
+	background-color: #b222;
+	font-style: bold;
+	font-family: serif;
+	font-size: 35px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+/*#mainbody{
+	position: absolute;
+	top: 45px;
+	left: 25px;
+	height: 400px;
+	width: 1400px;
+	background-color: yellow;
+}*/
+#horizontalline{
+	position: absolute;
+	top: 80px;
+	left: 10px;
+	width: 1650px;
+	border-top: 2px solid #b222;	
+}
+#address{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	height: 500px;
+	width: 700px;
+	background-color: #b222;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px black;	
+}
+#addresshr{
+	position: absolute;	
+	top: 50px;
+	left: 25px;
+	width: 650px;
+	border-top: 2px solid black;
+}
+#map{
+	position: absolute;
+	top: 100px;
+	left: 800px;
+	height: 500px;
+	width: 700px;
+	background-color: #b222;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px black;	
+}
+#googlemap{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	height: 350px;
+	width: 600px;
+	background-color: #b222;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px black;	
+
+}
+#googlemap:hover{
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px grey;	
+	font-size: 20px;
+}
+#image{
+		position: absolute;
+		left: 800px;
+		box-shadow: 1px 1px 2px black;
+
+	}
+#text{
+		position: absolute;
+		top: 10px;
+		left: 100px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 35px;
+		padding-left: 15px;
+		color: aliceblue;
+		text-shadow: 2px 2px 3px black;
+	}
+p{
+		font-style: bold;
+		text-align: center;
+		color: #97251c;
+		padding: 30px;
+		margin-left: 30px;
+		position: absolute;
+		top: 70px;
+		left: 20px;
+		width: 60px;
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 30px;
+		padding-left: 15px;
+		width: 350px;
+		text-align: left;
+}
+#contactusbody{
+	position: absolute;
+	top: 0px;
+	left: 600px;
+	width: 600px;
+    font-size: 50px;
+    color: red;
+    font-style: bold;
+    font-family: serif;
+    text-shadow: 2px 2px 3px black;
+}

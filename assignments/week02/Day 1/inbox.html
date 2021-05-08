@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head lang="en">
+<!--Required Meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="inbox.css">
+
+        <title>Inbox</title>
+ </head>
+<body>
+<!--Top Navigation Bar-->
+
+    <div class="container-fluid" style="background-color: bisque;margin-bottom: 0px; height: 50px;">
+        <div class="row topbar" style="background-color: #f9e8e6; border: 1px solid grey;" >
+
+            <div class="col-sm-1 col-md-1 "  >
+                <div> <a href="inbox.html"> <img id="threelines" src="threelines.png" width="25px" height="25px"  ></a></div>
+            </div> 
+
+                <div class="col-sm-1 col-md-1 logo">
+                 <a href="https://mail.google.com/mail/u/1/#inbox" target="blank"><img src="maillogo.png" width="95%" height="40px" style="padding-left: 0; margin: 0;"></a>
+
+            </div>
+            <div class="col-sm-8 col-md-8 searchbar" style="padding-left: 15px;">
+              
+                <div > <input id ="searchbarid" style="background-color: #ffffff;padding-left: 15px; font-size: 20px; height: 40px; width: 95%; padding-top: 0px;" type="text" ; placeholder="   search.." > 
+                    <img id="searchicon" src="search1.png" width="20px" height="80%" > </div  >  
+                    </div >
+           
+                    <div class="col-sm-2 col-md-2 corner3" style="margin-top: 5px;">
+                <img id="questionmark" src="questionmark.png" width="30px" height="30px" style="margin-left:15px ;">
+                <img id="ninedots" src="ninedots.png" width="30px" height="30px" style="margin-left:15px ;">
+                <img id="usericon" src="usericon.png" width="30px" height="30px" style="margin-left:15px ;">
+
+            </div>
+            <!--<div class="col-sm- col-md-1 usericon">
+               
+            </div> -->
+        </div>
+    </div>
+<!--Container for Left and Right side-->
+
+   <div class="container-fluid left-right-side" style="background-color: burlywood; margin-top: 4px; height: 100%; width: 100%;">
+        <div class="row leftandrightside">
+<!--Left side-->
+            <div class="col-sm-2 col-md-2 leftside" style="background-color: white; width: 100%;  border: 1px solid grey;"  >
+                    <a  href="#" target="blank" style="text-decoration: none; color: black; "><div  class="composebutton" style="background-color: rgb(188, 248, 188); border: 1px solid grey; box-shadow: 2px 2px 3px grey; margin-top: 30px; margin-left: 20px;">
+                    <div> <h5 >  <img src="compose.png" width="30px" height="30px" style="margin-right: 10px; margin-top: 8px;"> Compose</h5></div>
+                       
+                    </div></a>
+            <ul class="bulleting" style="margin-top: 15px; margin-bottom: 5px;">
+               <div class="bulleting2" style="list-style-type: none; height: 40px;padding: 0 ;"> 
+<!--1.list 2.link  3 image   4. span   5. text.-->
+                    <li id="inbox">   <a href="#" target="blank" style="text-decoration: none;" > <img src="inbox.png" width="30px" height="30px" style="opacity: 0.7; margin-bottom: 5px; padding-bottom: 5px;" >
+                                         <span style="padding-left: 10px; font-size: 20px;color: #767676; text-align: center; padding-top: 5px;">Inbox</span> </a> 
+                                         <hr style="margin-bottom:0; margin-left: 0px; margin-top: 0px; width: 90%; "> </li>
+                                                
+                    <li id="sent">   <a href="#" target="blank"  style="text-decoration: none;"> <img src="sent1.png" width="30px" height="30px" style="opacity: 0.7; margin-bottom: 5px; padding-bottom: 5px;" > 
+                                     <span style="padding-left: 10px; font-size: 20px;color: #767676; text-align: center; padding-top: 5px;">Sent</span> </a> 
+                                        <hr style="margin-bottom:0; margin-left: 0px; margin-top: 0px; width: 90%; "> </li>
+                                                                   
+                    <li id="snoozed">   <a href="#" target="blank" style="text-decoration: none;"> <img src="snoozed.png" width="30px" height="30px" style="opacity: 0.7; margin-bottom: 5px; padding-bottom: 5px;" > 
+                                          <span style="padding-left: 10px; font-size: 20px;color: #767676; text-align: center; padding-top: 5px;">Snoozed</span> </a> 
+                                          <hr style="margin-bottom:0; margin-left: 0px; margin-top: 0px; width: 90%; "></li>
+                                               
+                    
+                    <li id="draft">   <a href="#" target="blank" style="text-decoration: none;"> <img src="drafts.png" width="30px" height="30px" style="opacity: 0.7; margin-bottom: 5px; padding-bottom: 5px;" > 
+                                        <span style="padding-left: 10px; font-size: 20px;color: #767676; text-align: center; padding-top: 5px;">Draft</span> </a> 
+                                        <hr style="margin-bottom:0; margin-left: 0px; margin-top: 0px; width: 90%; "> </li>
+                                               
+                    
+                    <li id="more">   <a href="#" target="blank"  style="text-decoration: none;"> <img id="morehover" src="more.png" width="30px" height="30px" style="opacity: 0.7; margin-bottom: 5px; padding-bottom: 5px;" >
+                                         <span style="padding-left: 10px; font-size: 20px;color: #767676; text-align: center; padding-top: 5px;">More</span> </a>
+                                         <hr style="margin-bottom:0; margin-left: 0px; margin-top: 0px; width: 90%; ">  </li>                
+                    
+                </div>
+            </ul>
+            
+            </div>
+        
+<!--Mail box Right Side--> 
+            <div class="col-sm-10 col-md-10 rightside" style="background-color: white; margin-right: 0px; margin-top: 0px; height: 100%; width: 100%;">
+
+<!--Mailbox top bar-->
+    <div class="container-fluid topbar" style="background-color: rgb(255, 254, 253);padding-top: 0px; padding-right: 0px;padding-left: 0px; margin-top: 0px; height: 100%; width: 100%;">
+        <div class="row rightsidetopbar">
+                <div class="col-md-1 selectrefesh3" style="background-color: rgb(233, 200, 211); margin:0; margin-bottom: 0px;height: 40px; padding-left: 15px;padding-top: 5px;padding-bottom: 5px; width: 100%"; >
+                        <img id="cs" src="checkbox.png" width="25px" height="25px"> 
+                        <img id="arrows" src="downarrow.png" width="20px" height="15px" style="padding-top: 5px;"> </div>
+
+                        <div class="col-md-7 blankarea" style="background-color: rgb(233, 200, 211); padding: 0;height: 40px; width: 100%"; ></div>
+
+                        <div class="col-md-2 pagination" style="background-color: rgb(233, 200, 211);  padding: 0 40px; height: 40px; width: 100%";  >
+                            <p id="textmailboxbar" style="font-size: 15px;  padding:5px; padding-top: 8px; text-align: right;"> 1-50 of 1,213 </p> </div>
+
+                        <div class="col-md-2 setting" style="background-color: rgb(233, 200, 211);left: 0;height: 40px; margin:0; padding-top: 5px; width: 100%"; >
+                            <img id="arrows" src="arrowleft.png" width="12px" height="20px " style="margin-left: 15px;"> 
+                            <img id="arrows" src="arrowright.png" width="12px" height="20px"style="margin-left: 15px;"> 
+                            <img id="setting" src="setting1.png" width="30px" height="30px"style="margin-left: 20px;"> </div>
+                            <div > <hr id="mailhr" style="width: 90%; color:grey; margin-top: 0; margin-bottom: 0;"; ></div> 
+    
+                
+
+<!--Mailbox 2nd bar-->
+
+
+ </div> 
+</div>
+</div>
+     
+
+
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

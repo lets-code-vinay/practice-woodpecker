@@ -1,0 +1,25 @@
+
+{{#if loggedIn}}
+{{>nav2}}
+{{else}}
+{{>nav1}}
+{{/if}}
+
+<style>
+        #visit{
+            margin-top: 15%;
+            margin-left: 42%;
+            font-size: 25px;
+            background-color: none;
+            padding: 15px 50px;
+            background-color: #aaccd1;
+            font-weight: 700;
+            letter-spacing: 2px;
+            
+        }
+    </style>
+    <a href="/allforums">
+    <button id="visit">
+        Visit Forums
+    </button>
+    </a>

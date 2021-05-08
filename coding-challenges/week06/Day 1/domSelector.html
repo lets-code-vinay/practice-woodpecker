@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> Dom Selector Practice</title>
+        <!-- Programmed By : Vinay Maurya : AttainU : VST1 : Woodpecker-->      
+    </head>
+    <body>
+        <div>
+            Content 1
+            <span>Span Child 1</span>
+            <h1> I am Super Man</h1>
+        </div>
+        <section>
+            <h1> I am Batman</h1>
+        </section>
+        <span>
+            Span child 3
+            <h1> I am a Joker</h1>
+        </span>
+        <div>
+            <span>
+                span Child 4
+            </span>
+            <h1> I am Ironman</h1>
+            <div>
+                <span> Span child 5</span>
+            </div>
+        </div>
+   <script>
+        var divArray = document.querySelectorAll('div');
+        var output = " ";
+        for (var i = 0; i < divArray.lenght ; i++){
+            output += divArray[i].querySelector('span').innerText+ ","
+        }
+        console.log(output.toUpperCase());
+   </script>   
+    </body>
+</html>

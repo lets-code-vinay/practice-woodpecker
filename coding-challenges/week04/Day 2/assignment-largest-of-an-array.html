@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Program to compare two arrays    </title>
+<!--Programmed by : Vinay Maurya: AttainU: VST1: Woodpecker: Ludhiana-->
+<!--Assignment Coding Challenge -2-->
+<body>
+    <script>
+        //Program to find largest no. in an array
+        
+        var exampleArray = [0,2,3,4,5,8,1,6];
+function findLargestNumber(arr){
+   
+    LargeNumber = 0;
+   
+    for(let i = 0; i <= arr.length; i++){
+        if(arr[i] > LargeNumber){
+            
+             LargeNumber = arr[i];
+        
+        }
+    }
+
+    return LargeNumber;
+}
+    document.write("The large number is :", LargestNumber(exampleArray));
+
+    
+    </script>
+</body>
+    </html>

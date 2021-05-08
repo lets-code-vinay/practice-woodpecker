@@ -1,0 +1,15 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+.bottompara{
+    margin-left: 20px;
+    
+    
+}
+.gridbox{
+    margin: 100px; margin-left: 15%; margin-top: 10px; margin-bottom: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 480px);
+}

@@ -1,0 +1,13 @@
+.imgFilter{
+    filter: brightness(0.20);
+}
+a{
+    color: white;
+}
+a:link{
+    color: white;
+}
+a:hover{
+    color:yellow;
+    scale: 2;
+}

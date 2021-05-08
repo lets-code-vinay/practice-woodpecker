@@ -1,0 +1,61 @@
+<!--
+<div class="col">
+<!--item7 maggie-->
+<div class="container-fluid maggie" style="background-color:white; text-decoration: none; text-decoration-style: none;"> 
+    <a href="#" target="blank" style="color: black"><div class="imagepart" style="padding-top: 5px; padding-left: 15px;">
+        <img src="maggie.jpg" width="200px" height="250px">      
+    </div>
+    <div class="def" style="padding-left:25px;">
+            <b>Maggi, Ching's Noodles</b><br><span style="color: grey;">Min 20% off</span><br><span style="color: grey;">Also Grab $1 Deals on Grocery</span>
+    </div>
+         </div></a>
+<!--item 7 end block--></div>
+
+<div class="col">
+<!--item8 powerbank-->
+<div class="container-fluid powerbank" style="background-color:white; text-decoration: none; text-decoration-style: none;"> 
+    <a href="#" target="blank" style="color: black"><div class="imagepart" style="padding-top: 5px; padding-left: 15px;">
+        <img src="powerbank.jpg" width="200px" height="250px">      
+    </div>
+    <div class="def" style="padding-left:25px;">
+            <b>powerbanks</b><br><span style="color: grey;">Extra 50% off</span><br><span style="color: grey;">Top Selling</span>
+    </div>
+         </div></a>
+<!--item 8 end block--></div>
+
+<div class="col">
+<!--item9 shoes-->
+<div class="container-fluid shoes" style="background-color:white; text-decoration: none; text-decoration-style: none;"> 
+    <a href="#" target="blank" style="color: black"><div class="imagepart" style="padding-top: 5px; padding-left: 15px;">
+        <img src="shoes.jpg" width="200px" height="250px">      
+    </div>
+    <div class="def" style="padding-left:25px;">
+            <b>Sparx, Layasa & more</b><br><span style="color: grey;">From $199+ Extra 5%</span><br><span style="color: grey;">Men's Footwear</span>
+    </div>
+         </div></a>
+<!--item 9 end block--></div>
+
+<div class="col">
+<!--item10 bluetooth-->
+<div class="container-fluid bluetooth" style="background-color:white; text-decoration: none; text-decoration-style: none;"> 
+    <a href="#" target="blank" style="color: black"><div class="imagepart" style="padding-top: 5px; padding-left: 15px;">
+        <img src="bluetooth.jpg" width="200px" height="250px">      
+    </div>
+    <div class="def" style="padding-left:25px;">
+            <b>Car&Bike Accessories</b><br><span style="color: grey;">From $99+ Extra 10% Off</span><br><span style="color: grey;">Top Selling</span>
+    </div>
+         </div></a>
+<!--item 10 end block--></div>
+
+<div class="col">
+<!--item11 homedecor-->
+<div class="container-fluid homedecor" style="background-color:white; text-decoration: none; text-decoration-style: none;"> 
+    <a href="#" target="blank" style="color: black"><div class="imagepart" style="padding-top: 5px; padding-left: 15px;">
+        <img src="homedecor.jpg" width="200px" height="250px">      
+    </div>
+    <div class="def" style="padding-left:25px;">
+            <b>Home Decor Range</b><br><span style="color: grey;">From $99</span><br><span style="color: grey;">Sticker, Wall Clock & more</span>
+    </div>
+         </div></a>
+<!--item 11 end block--></div>
+-->

@@ -1,0 +1,14 @@
+Name:Jasprit
+Aadhar:6048 6310 1264
+DOB:01/02/73
+Gender:Male
+
+Name : Jasprit
+Aadhar:6048 6310 1264
+DOB:01/02/73
+Gender:Male
+
+Name:Jasprit
+Aadhar:6048 6310 1264
+DOB:01/02/73
+Gender:Male

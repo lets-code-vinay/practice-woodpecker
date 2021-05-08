@@ -1,0 +1,48 @@
+
+{{#if loggedIn}}
+{{>nav2}}
+{{else}}
+{{>nav1}}
+{{/if}}
+
+{{>forumheader}}
+
+<h6>{{forum.title}}</h6>
+<p>{{forum.description}}</p>
+<button id="create-thread">Create Thread</button>
+
+<div id="thread">
+    <form action="/create-thread/:{{forum.id}}" method="POST">
+    <textarea name="create-thread" id="create-thread" cols="50" rows="5"></textarea>
+    <button type="submit">Submit Thread</button>
+    </form>
+</div>
+<script>
+    document.getElementById("thread").style.display="none"
+    document.getElementById("create-thread").addEventListener("click", function(){
+        document.getElementById("thread").style.display="block"
+    })
+</script>
+
+<h3>All Threads</h3>
+
+    <ul>
+        {{#each threads}}
+        <li>
+            <h5>
+                {{this.question}}
+            </h5>
+            <details>
+                <summary>
+                     <p>replies</p>
+                     <ul>
+                         {{#each replies}}
+                            <li>{{this.reply}}</li>
+                         {{/each}}
+                     </ul>
+                        
+                </summary>
+               </details> 
+        </li>
+        {{/each}}
+    </ul>

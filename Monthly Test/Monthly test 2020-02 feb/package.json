@@ -1,0 +1,22 @@
+{
+  "name": "febtest",
+  "version": "1.0.1",
+  "description": "The test of Feb 2020 conducting on 29/02/2020",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "feb"
+  ],
+  "author": "Vinay Maurya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.9.2"
+  }
+}

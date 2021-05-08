@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> Alien Decoder </title>
+            <!-- : Programmed By : Vinay Maurya : AttainU : VST1 : Woodepecker :-->
+            <!-- Alien Problem :-->    
+
+    </head>
+    <body>
+        <h1> Alien </h1><hr>
+
+        <script>
+              var input = "LISUFTINE";
+              var shape = "round";
+              var color = "crimson";
+              var legs = 6;
+              var hands = 3;
+              var input = input.split("");
+              var out = " ";
+              var dict = {};
+              var data;
+              for(var a = 0; a < input.length; b++){
+                  if(dict[input[a]] == undefined){
+                      for(var b=0; b < data.length; b++){
+                          if(input[a] == data[b].letter){
+                              var letr = data[b];
+                              for(var c = 0; c < data[b].shape.length; c++){
+                                  if(shape == letr.shape[c].shape){
+                                    var col = letr.shape[c].color;
+                                  for(var d=0; d<col.length; d++){
+                                      if(color == col[d].type){
+                                          var lgs = col[d].legs;
+                                          for(var e = 0; e < lgs[e].legs; e++){
+                                              if(legs == lgs[e].number){
+                                                  var hnds = lgs[e].hands;
+                                                  for(var f = 0; f < hnds.length; f++){
+                                                      if(hands == hnds[f].number){
+                                                          out += hnds[f].code;
+                                                          dict[input[a]] = hnds[f].code
+                                                      }
+                                                  }
+                                              }
+                                        }
+                                  
+                                  }
+
+                              }
+                          }
+                      }
+                  }
+              }
+            }
+            else{
+                console.log("From dict");
+                out +=dict[input[a]];
+            }
+              }    
+        
+        </script>
+
+<script src="data.js"> </script> 
+</body>
+</html>

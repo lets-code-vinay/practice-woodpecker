@@ -1,0 +1,52 @@
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        height: 60px;
+        background-color: rgb(234, 244, 245);
+    }
+    nav i{
+        font-size: 40px;
+        margin: 10px 0 0 50px;
+    }
+    nav a{
+     
+        text-decoration: none;
+        font-size: 17px;
+        color: black;
+    }
+    nav a:hover{
+        text-decoration: none;
+        color:black
+    }
+    nav span{
+        position: relative;
+        bottom: 8px;
+    }
+    nav button{
+        cursor: pointer;
+        padding: 4px 10px;
+        background-color: rgb(179, 216, 220);
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+        border-radius: 5px;
+    }
+    nav #forums{
+        margin-left: 800px;
+        margin-right: 140px;
+        font-weight: 700;
+    }
+    nav #LogOut{
+        margin-left: 30px;
+    }
+</style>
+<nav>
+    <i class="fab fa-foursquare"></i>
+    <span>    <a id="forums" href="/allforums">Forums</a>
+        Welcome {{userName}}
+        <a id="login" href="/logout"><button>LogOut</button></a> </span>
+
+</nav>

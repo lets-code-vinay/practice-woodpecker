@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Program to compare two arrays    </title>
+<!--Programmed by : Vinay Maurya: AttainU: VST1: Woodpecker: Ludhiana-->
+<!--Assignment Coding Challenge -2-->
+<body>
+    <script>
+        //Program to two arrays are equal on not and print the result of matching
+        //Program to two arrays are equal on not and print the result of matching
+        var num = [0,2,3,4,5,8,1,6];
+        var num1 = [0,5,3,8,5,0,3,9];
+        isEqual( num, num1);
+        function isEqual(num, num1){
+        document.write("The length of first array is ", num.length , "<br><br>");
+        document.write("The length of Second array is ", num1.length ,"<br><br>");
+        if(num.length == num1.length){
+            document.write("The array is of equal lenght<br>");
+            
+            for(var i = 0; i <= num.length; i++)
+                 if(num[i] == num1[i]){
+                     continue;
+                         document.write( "Arrays elements are equal<br> <br>")
+            }   
+            else{
+                document.write("Arrays elements are not equal<br>")
+            }
+             
+        
+        }
+        else
+            document.write("The array is not of same length<br><br>");
+
+            document.write("<br><br>");
+    }
+    </script>
+</body>
+    </html>

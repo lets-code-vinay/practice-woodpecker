@@ -1,0 +1,99 @@
+//1. to get details of all the faculty
+db.faculty.find()
+
+//Get the count of all the faculty members
+
+db.faculty.count()
+
+//Get all the faculty members whose qualification is “Ph.D”.
+db.faculty.find({"Qualification": "Ph.D"})
+
+//Get all the faculty members whose experience is between 8 to 12 years.
+db.faculty.find({$and:[ {exp: { $gt:8}},{exp: {$lt:12 } } ] } )
+
+// Get all the faculty members who teach “MATHS” or “NETWORKING”.
+db.faculty.find({$or:[{subjects:"MATHS"},{subjects:"NETWORKING"}]})
+
+//Get all the faculty members who teach “MATHS” and whose age 
+//is more than 30 years and qualification must be “Ph.D”.
+
+db.faculty.find({$and:[{subjects:"MATHS"},
+                {age:{$gte:30}},
+                {"Qualification": "Ph.D"}]})
+
+//Get all the faculty members who are working part-time or who teach “JAVA”.
+db.faculty.find({$or:[{type: "Part time"},{"subjects": ["java"]}]})
+
+// Adding the following new faculty members:
+
+db.faculty.insert({
+    name:"Suresh Babu",
+    age: 55,
+    gender: "M",
+    exp: 25,
+    subjects:["MATHS", "DE"],
+    type:"Full type",
+    Qualification: "Ph.D"
+});
+db.faculty.find()
+//Update the data of all faculty members by incrementing their age and exp by one year
+db.faculty.updateMany({}, {$inc:{age: 1 ,exp: 1}})
+db.faculty.find()
+
+//Update the faculty “Sivani” with the following data:
+// update qualification to “Ph.D” and type to “Full Time”.
+db.faculty.find({name:"Sivani"})
+db.faculty.updateMany({name:"Sivani"},{$set:{Qualification: "Ph.D",type:"Full Time"}})
+db.faculty.find({name:"Sivani"})
+//11. Update all faculty members who are teaching “MATHS” such that 
+//they should now also teach “PSK”.
+db.faculty.updateOne( { subjects:["MATHS"]}, {$set: {subjects : ["PSK"]}})
+
+
+
+
+//12. Delete all faculty members whose age is more than 55 years.
+
+     db.faculty.deleteMany({age:{$gt:54}})
+
+//13. Get only the name and qualification of all faculty members. 
+
+     db.faculty.find({},{name:1,_id:0,qualification:1});
+
+//14. Get the name, qualification and exp of all faculty members and display the same in ascending order of exp.
+ 
+    db.faculty.find({},{name:1,_id:0,qualification:1,exp:1}).sort({exp:-1}).pretty()
+
+//15. Sort the faculty details by their age (descending order) and get the details of the first five faculty members only. 
+
+    db.faculty.find({}).sort({age:-1}).limit(5).pretty()
+
+
+//mongod --dbpath={ Your db pattern } --port={ Your port number }
+//ReTried
+//1.
+//    db.faculty.find().pretty()
+//2.
+  //   db.faculty.count()
+//3.
+    // db.faculty.find({qualification:'Ph.D'}).pretty()
+//4.
+  //   db.faculty.find({$and:[{exp:{$gt:7}},{exp:{$lt:13}}]}).pretty()
+//5.
+    // db.faculty.find({subjects:{$in:["MATHS","NETWORKING"]}}).pretty()
+//6.
+   //  db.faculty.find({$and:[{subjects:'MATHS'},{age:{$gt:29}},{qualification:'Ph.D'}]}).pretty()
+//7.
+   //  db.faculty.find({$or:[{type:"Part Time"},{subjects:"JAVA"}]}).pretty()
+//8.
+    // db.faculty.insert( {"name" : "Suresh Babu", age:55, "gender":"M", "exp":25, subjects:["MATHS","DE"],"type":"Full Time", "qualification":"Ph.D"})
+
+//9.
+    // db.faculty.updateMany({},{$inc:{age:1,exp:1}})
+
+//10.
+    // db.faculty.updateMany({name:"Sivani"},{$set:{qualification:"Ph.D",type:"Full Time"}})
+  //  db.faculty.find({name:"Sivani"})
+//11.
+    // db.faculty.updateMany({subjects:"MATHS"},{$push:{subjects:"PSK"}})
+     //   db.faculty.find({subjects:"MATHS"})
